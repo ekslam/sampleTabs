@@ -1,0 +1,8 @@
+{
+  "name": "sampleTabs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "8b071a93"
+}
