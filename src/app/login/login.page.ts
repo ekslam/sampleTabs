@@ -14,6 +14,9 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  constructor (public routes: Routes) {
+
+  }
   async navTabs(){
     this.routes.navigateByUrl('/app/tabs/(home:home)');
     

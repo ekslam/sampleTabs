@@ -1,20 +1,49 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-icon name="power" style = "zoom:2.0;"></ion-icon>
-  </ion-toolbar>
+  <ion-menu>
+    <ion-toolbar color = "primary">
+      <ion-title>Menu
+        <ion-icon name="power" style = "zoom:2.0;"></ion-icon>
+    </ion-title>
+    </ion-toolbar>
+</ion-menu>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
+    <ion-content>
+    <ion-list>
+      <ion-list-header>
+        Navigate
+      </ion-list-header>
+      <ion-menu-toggle auto-hide="false">
+        <ion-item button>
+          <ion-icon slot="start" name='home'></ion-icon>
+          <ion-label>
+            Home
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+
+  <!--<ion-page class="ion-page" main>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </ion-page>
+  </ion-app>
+-->
+  
+
+
     <ion-list lines="none">
       <ion-list-header>
         <ion-label>Resources</ion-label>
@@ -36,4 +65,6 @@
         <ion-label>Theme Your App</ion-label>
       </ion-item>
     </ion-list>
+
+    <ion-button color="primary" shape = "round">Primary</ion-button>
 </ion-content>
